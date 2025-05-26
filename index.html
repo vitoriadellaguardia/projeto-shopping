@@ -2,141 +2,195 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>shopping</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        amarelo: '#E6C744',
-                        cinza: '#C2C8DA',
-                        cinzaclaro: '#7C7C7C',
-                        cinzaescuro: '#89807A',
-                    },
-                },
-            },
-        }
-    </script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>shopping</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            amarelo: '#E6C744',
+            cinza: '#C2C8DA',
+            cinzaclaro: '#7C7C7C',
+            cinzaescuro: '#89807A',
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-        * {
-            font-family: "Poppins", sans-serif;
-        }
-    </style>
+    * {
+      font-family: "Poppins", sans-serif;
+    }
+  </style>
 
 
 </head>
 
 <body>
-    <header class="flex items-center justify-between  px-[100px] pt-[35px] ">
-        <div>
-            <img src="imgs/logo.png" alt="Faschion">
+  <header class="flex items-center justify-between  px-[100px] pt-[35px] ">
+    <div>
+      <img src="imgs/logo.png" alt="Faschion">
 
+    </div>
+    <nav class="flex gap-16 items-center" *:uppercase" *:leading-[62px]>
+      <a href="" class="hover:text-amarelo">Catalogue</a>
+      <a href="" class="hover:text-amarelo">Fashion</a>
+      <a href="" class="hover:text-amarelo">Favourites</a>
+      <a href="" class="hover:text-amarelo">Lifestyle</a>
+      <a href=""
+        class="leading-[62px] bg-black text-white px-[22px] rounded-md hover:bg-amarelo hover:text-black duration-200">Sign
+        up</a>
+    </nav>
+
+  </header>
+  <main>
+    <section id="banner">
+
+    </section>
+    <section id="marcas">
+
+    </section>
+    <section id="novidades">
+
+    </section>
+    <section id="promocao">
+
+    </section>
+    <section id="favoritos">
+
+    </section>
+    <section id="aplicativo">
+      <div class="min-h-screen px-9 flex items-center justify-between">
+        <!-- COLUNA ESQUERDA -->
+        <div class="flex flex-col items-start justify-center gap-6 max-w-[50%]">
+          <h1 class="text-4xl font-extrabold leading-tight">
+            DOWNLOAD APP &<br>GET THE VOUCHER!
+          </h1>
+
+          <h3 class="text-cinzaclaro">
+            Get 30% off for first transaction using<br>
+            Rondovision mobile app for now.
+          </h3>
+
+          <div class="flex space-x-4 mt-4">
+            <a href="https://apps.apple.com/">
+              <img src="imgs/appstore.png" alt="Download on the App Store" class="h-14 w-auto">
+            </a>
+
+            <a href="https://play.google.com/store/apps/">
+              <img src="imgs/googleplay.png" alt="Download on Google Play" class="h-14 w-auto">
+            </a>
+          </div>
         </div>
-        <nav class="flex gap-16 items-center" *:uppercase" *:leading-[62px]>
-            <a href="" class="hover:text-amarelo">Catalogue</a>
-            <a href="" class="hover:text-amarelo">Fashion</a>
-            <a href="" class="hover:text-amarelo">Favourites</a>
-            <a href="" class="hover:text-amarelo">Lifestyle</a>
-            <a href=""
-                class="leading-[62px] bg-black text-white px-[22px] rounded-md hover:bg-amarelo hover:text-black duration-200">Sign
-                up</a>
-        </nav>    
 
-    </header>
-    <main>
-        <section id="banner">
+        <!-- COLUNA DIREITA: CELULAR -->
 
-        </section>
-        <section id="marcas">
+        <div class="relative w-[400px] h-[600px] flex items-center justify-center">
 
-        </section>
-        <section id="novidades">
-
-        </section>  
-        <section id ="promocao">
-
-        </section>
-        <section id="favoritos">
-
-        </section>
-        <section id="aplicativo">
-            <div class="min-h-screen px-9 flex items-center justify-between">
-              <!-- COLUNA ESQUERDA -->
-              <div class="flex flex-col items-start justify-center gap-6 max-w-[50%]">
-                <h1 class="text-4xl font-extrabold leading-tight">
-                  DOWNLOAD APP &<br>GET THE VOUCHER!
-                </h1>
-          
-                <h3 class="text-cinzaclaro">
-                  Get 30% off for first transaction using<br>
-                  Rondovision mobile app for now.
-                </h3>
-          
-                <div class="flex space-x-4 mt-4">
-                  <a href="https://apps.apple.com/">
-                    <img src="imgs/appstore.png" alt="Download on the App Store" class="h-14 w-auto">
-                  </a>
-          
-                  <a href="https://play.google.com/store/apps/">
-                    <img src="imgs/googleplay.png" alt="Download on Google Play" class="h-14 w-auto">
-                  </a>
-                </div>
-              </div>
-          
-              <!-- COLUNA DIREITA: CELULAR -->
-            
-              <div class="relative w-[400px] h-[600px] flex items-center justify-center">
-              
-                 <!-- Bolinhas -->
- <img src="imgs/bolacinzag.png" alt="" class="absolute top-[20px] left-[-15px] w-[22px] h-[24px]">
-  <img src="imgs/bolaamarelag.png" alt="" class="absolute top-[-10px] right-[-25px] w-[50px] h-[50px]">
-  <img src="imgs/bolaamarelap.png" alt="" class="absolute bottom-[60px] left-[-25px] w-[34px] h-[34px]">
-  <img src="imgs/bolacinzap.png" alt="" class="absolute bottom-[20px] right-[-10px] w-[17px] h-[17px]">
+          <!-- Bolinhas -->
+          <img src="imgs/bolacinzag.png" alt="" class="absolute top-[20px] left-[-15px] w-[22px] h-[24px]">
+          <img src="imgs/bolaamarelag.png" alt="" class="absolute top-[-10px] right-[-25px] w-[50px] h-[50px]">
+          <img src="imgs/bolaamarelap.png" alt="" class="absolute bottom-[60px] left-[-25px] w-[34px] h-[34px]">
+          <img src="imgs/bolacinzap.png" alt="" class="absolute bottom-[20px] right-[-10px] w-[17px] h-[17px]">
 
 
-                <img src="imgs/Ellipse 1.png" class="absolute w-[100%] top-0 left-0" alt="">
-                <img src="imgs/Ellipse 5.png" class="absolute w-[90%] top-4 left-4" alt="">
-                <img src="imgs/Ellipse 6.png" class="absolute w-[80%] top-8 left-8" alt="">
-                <img src="imgs/celular.png" class="relative z-10 w-full" alt="">
-              </div>
-            </div>
-          
-         <!-- PARTE AMARELA -->
-            <section class="bg-amarelo text-center top-[5646px] w-full h-[623px] left-28 pt-24"> <h2 class="text-white text-[55px] font-bold mb-6"> JOIN SHOPPING COMMUNITY TO <br class="hidden md:block" />
-        GET MONTHLY PROMO
-    </h2>
-    <p class="text-white mb-10 text-base md:text-lg"> Type your email down below and be young wild generation
-    </p>
+          <img src="imgs/Ellipse 1.png" class="absolute w-[100%] top-0 left-0" alt="">
+          <img src="imgs/Ellipse 5.png" class="absolute w-[90%] top-4 left-4" alt="">
+          <img src="imgs/Ellipse 6.png" class="absolute w-[80%] top-8 left-8" alt="">
+          <img src="imgs/celular.png" class="relative z-10 w-full" alt="">
+        </div>
+      </div>
 
-    <form class="flex flex-col sm:flex-row justify-center items-center gap-4 max-w-lg mx-auto"> <input
-            type="email"
-            placeholder="Add your email here"
-            class="px-5 py-3 w-full sm:w-auto flex-1 rounded-md outline-none" required
-        />
-        <button
-            type="submit"
-            class="bg-black text-white px-8 py-3 rounded-md hover:bg-gray-800 transition" >
+      <!-- PARTE AMARELA -->
+      <section class="bg-amarelo text-center top-[5646px] w-full h-[623px] left-28 pt-24">
+        <h2 class="text-white text-[55px] font-bold mb-6">
+          JOIN SHOPPING COMMUNITY TO <br class="hidden md:block" />
+          GET MONTHLY PROMO
+        </h2>
+        <p class="text-white mb-10 text-base md:text-lg">
+          Type your email down below and be young wild generation
+        </p>
+
+        <form class="flex justify-between items-center max-w-lg mx-auto bg-white rounded-xl p-2.5">
+          <input type="email" placeholder="Add your email here"
+            class="flex-1 px-3 py-3.5 text-gray-700 placeholder-gray-400 outline-none border-none focus:ring-0"
+            required />
+          <button type="submit"
+            class="bg-black text-white px-8 py-3.5 font-bold text-base rounded-lg flex items-center justify-center">
             SEND
-        </button>
-    </form>
+          </button>
+        </form>
+      </section>
+
+
+    </section>
+<!-- PARTE PRETA -->
+   <section class="bg-black text-left w-full pt-24 pb-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-start">
+        <div class="mb-8 md:mb-0 md:w-1/3">
+            <h1 class="text-white font-bold text-5xl mb-4">FASHION</h1>
+            <p class="text-gray-400 text-xl">Complete your style with awesome clothes from us.</p>
+            <div class="flex space-x-4 mt-6">
+                <a href="URL_DO_SEU_FACEBOOK" target="_blank" class="w-9 h-10 rounded-full bg-white flex items-center justify-center p-1 hover:scale-110 transition-transform">
+                    <img src="imgs/face1.png" alt="Facebook" class="w-full h-full object-contain">
+                </a>
+                <a href="URL_DO_SEU_INSTAGRAM" target="_blank" class="w-8 h-8 rounded-full bg-white flex items-center justify-center p-1 hover:scale-110 transition-transform">
+                    <img src="imgs/insta2.png" alt="Instagram" class="w-full h-full object-contain">
+                </a>
+                <a href="URL_DO_SEU_TWITTER" target="_blank" class="w-8 h-8 rounded-full bg-white flex items-center justify-center p-1 hover:scale-110 transition-transform">
+                    <img src="imgs/twitter3.png" alt="Twitter" class="w-full h-full object-contain">
+                </a>
+                <a href="URL_DO_SEU_LINKEDIN" target="_blank" class="w-8 h-8 rounded-full bg-white flex items-center justify-center p-1 hover:scale-110 transition-transform">
+                    <img src="imgs/link4.png" alt="LinkedIn" class="w-full h-full object-contain">
+                </a>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-16 mt-8 md:mt-0">
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Company</h3>
+                <ul class="space-y-2 text-gray-400 text-sm">
+                    <li><a href="#" class="hover:text-white">About</a></li>
+                    <li><a href="#" class="hover:text-white">Contact us</a></li>
+                    <li><a href="#" class="hover:text-white">Support</a></li>
+                    <li><a href="#" class="hover:text-white">Careers</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Quick Link</h3>
+                <ul class="space-y-2 text-gray-400 text-sm">
+                    <li><a href="#" class="hover:text-white">Share Location</a></li>
+                    <li><a href="#" class="hover:text-white">Orders Tracking</a></li>
+                    <li><a href="#" class="hover:text-white">Size Guide</a></li>
+                    <li><a href="#" class="hover:text-white">FAQs</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Legal</h3>
+                <ul class="space-y-2 text-gray-400 text-sm">
+                    <li><a href="#" class="hover:text-white">Terms & conditions</a></li>
+                    <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </section>
-            
 
-          </section>
-          
-        <section id="noticias">
 
-        </section>
-      
-    </main>
-    <footer>
 
-    </footer>
+      <section id="noticias">
+
+      </section>
+
+  </main>
+  <footer>
+
+  </footer>
 
 </body>
 
